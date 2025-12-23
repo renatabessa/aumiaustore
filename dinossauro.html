@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Dino Style</title>
+  </head>
+  <body>
+    <div class="container-principal">
+      <header>
+        <nav class="navbar navbar-expand-lg barraNav">
+          <a href="index.html">
+            <img
+              src="images/logo.svg"
+              alt="Logo da Aumiau store"
+              class="logo"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#barra-Nav"
+          >
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+
+          <div class="navbar-collapse collapse" id="barra-Nav">
+            <ul class="menuNav ms-auto">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="#destaques">Destaques</a></li>
+              <li><a href="#pedidos">Pedidos</a></li>
+              <!-- <li><a href="#newsletter">Contato</a></li> -->
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="conteudo-principal">
+        <h1 class="titulo titulo-principal">Roupinha de Dinossauro</h1>
+
+        <section id="destaques">
+          <h2 class="titulo titulo-secao">
+            ***** Faça seu Pet voltar ao passado *****
+          </h2>
+          <div class="produto-detalhes">
+            <ul class="produto-apresentacao">
+              <li class="produto">
+                <figure class="imagem-legendada imagem-produto">
+                  <img
+                    src="images/dog_dino.png"
+                    alt="Imagem de um cão com roupa de dionossauro"
+                  />
+                  <figcaption>A roupinha pre-histórica para seu Pet</figcaption>
+                </figure>
+              </li>
+            </ul>
+            <div>
+              <p>
+                Feita com material 100% algodão, a roupinha de dinossauro é
+                perfeita para manter seu pet confortável e estiloso. Com um
+                design divertido, essa roupa vai transformar seu amigo em uma
+                verdadeira criatura jurássica!
+              </p>
+              <div class="tabela-tamanhos">
+                <table>
+                  <thead>
+                    <tr>
+                      <th rowspan="2">Produto</th>
+                      <th colspan="2">Lista de tamanhos</th>
+                    </tr>
+                    <tr>
+                      <th>Tamanho:</th>
+                      <th>Serve em:</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td rowspan="3">Roupa</td>
+                      <td>P</td>
+                      <td>Até 5kg</td>
+                    </tr>
+                    <tr>
+                      <td>M</td>
+                      <td>de 5kg a 10kg</td>
+                    </tr>
+                    <tr>
+                      <td>G</td>
+                      <td>de 10kg a 18kg</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="pedidos">
+          <h2 class="titulo titulo-secao">***** Faça seu pedido *****</h2>
+          <p>Preencha o formulário abaixo para fazer sua encomenda</p>
+          <div class="formulario-newsletter">
+            <form
+              action="https://httpbin.org/post"
+              method="post"
+              class="formulario-area"
+            >
+              <label for="nome">Nome do Tutor:</label>
+              <input
+                type="text"
+                required
+                id="nome"
+                placeholder="Digite o nome do tutor"
+                name="nome"
+              />
+              <label for="email">E-mail:</label>
+              <input
+                type="email"
+                required
+                placeholder="Digite seu e-mail"
+                name="e-mail"
+              />
+              <h4>Escolha o modelo da roupa:</h4>
+              <select name="modelo" id="modelo-select">
+                <option value="Dinossauro">Roupa de Dinossauro</option>
+                <option value="Chucky">Roupa do Chucky</option>
+                <option value="COwboy">Roupa de Cowboy</option>
+              </select>
+              <h4>Escolha o tamanho da roupa:</h4>
+              <div class="formulario-radio">
+                <div class="radio-group">
+                  <input
+                    type="radio"
+                    name="tamanho"
+                    id="tamanhoPequeno"
+                    value="P"
+                  />
+                  <label for="tamanhoPequeno">P</label>
+                </div>
+                <div class="radio-group">
+                  <input
+                    type="radio"
+                    name="tamanho"
+                    id="tamanhoMedio"
+                    value="M"
+                  />
+                  <label for="tamanhoMedio">M</label>
+                </div>
+                <div class="radio-group">
+                  <input
+                    type="radio"
+                    name="tamanho"
+                    id="tamanhoGrande"
+                    value="G"
+                  />
+                  <label for="tamanhoGrande">G</label>
+                </div>
+              </div>
+              <label>Informe a quantidade desejada:</label>
+              <input type="number" id="quantidade" name="quantidade" placeholder="1" />
+              <label for="mensagem">Deixe uma mensagem:</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                placeholder="Sua mensagem..."
+              ></textarea>
+              <div class="formulario-botao">
+                <button type="submit" class="botao-submit">
+                  Quero descontos!
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="rodape">
+        <p>&copy; 2025 AuMiau Store. Todos os direitos reservados.</p>
+        <p>Roupas e acessórios para pets com estilo e conforto.</p>
+      </footer>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".menuNav a");
+        const navbarCollapse = document.getElementById("barra-Nav");
+
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", function () {
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+              toggle: true,
+            });
+            bsCollapse.hide();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
